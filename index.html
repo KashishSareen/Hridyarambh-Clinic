@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hridyarambh Clinic - Where Every Heart Finds Its Beginning</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -58,23 +59,23 @@
         }
         
         .slider-image:nth-child(1) {
-            background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(0, 151, 167, 0.3)), url('./images/banner_2.jpg');
+           background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/banner_2.jpg');
         }
         
         .slider-image:nth-child(2) {
-            background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(0, 151, 167, 0.3)), url('./images/banner_3.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/banner_3.jpeg');
         }
         
         .slider-image:nth-child(3) {
-            background-image: linear-gradient(rgba(38, 50, 56, 0.7), rgba(0, 151, 167, 0.3)), url('./images/banner_4.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/banner_4.jpeg');
         }
         
         .slider-image:nth-child(4) {
-            background-image: linear-gradient(rgba(38, 50, 56, 0.8), rgba(0, 151, 167, 0.4)), url('./images/consultationRoom.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/consultationRoom.jpeg');
         }
         
         .slider-image:nth-child(5) {
-            background-image: linear-gradient(rgba(38, 50, 56, 0.8), rgba(0, 151, 167, 0.4)), url('./images/waitingAera.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/waitingAera.jpeg');
         }
         
         .fade-in {
@@ -95,7 +96,7 @@
         }
     </style>
 </head>
-<body class="font-sans">
+<body class="font-sans overflow-x-hidden">
     <!-- Navigation -->
     <nav class="bg-main-bg shadow-xl fixed w-full z-50 border-b-2 border-primary">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -160,53 +161,59 @@
         <div class="slider-image"></div>
         <div class="slider-image"></div>
         <div class="slider-image"></div>
-        
-        <!-- Content -->
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-20">
-            <div class="fade-in">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                    Hridyarambh Clinic
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
-                    Where Every Heart Finds Its Beginning
-                </p>
-                <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90">
-                    Comprehensive Healthcare by Dr. Kiran Narang & Dr. Pallavi Chauhan
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#about" class="bg-white text-heading-text hover:bg-light-bg hover:text-primary px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl border-2 border-white hover:border-primary">
-                        Learn More About Us
-                    </a>
-                    <a href="#contact" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl border-2 border-primary hover:border-white">
-                        Book Appointment
-                    </a>
-                </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-20">
+
+            <!-- Clinic Name -->
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white text-center leading-tight mb-6 drop-shadow-lg max-w-2xl">
+                Hridyarambh Clinic
+            </h1>
+
+            <!-- Description -->
+            <p class="text-sm sm:text-base text-white/75 text-center max-w-lg leading-relaxed mb-4">
+                A trusted polyclinic committed to delivering comprehensive and compassionate healthcare under one roof — led by experienced specialists in Cardiology and Gynaecology.
+            </p>
+
+            <!-- Second line of info -->
+            <p class="text-sm sm:text-base text-white/60 text-center max-w-lg leading-relaxed mb-10">
+                Advanced diagnostics including 2D Echo, TMT, Blood Tests, Sonography & Scanning · In-house Pharmacy · 15+ Specialties including Orthopaedics, Paediatrics, Urology & more
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#about" class="bg-white text-primary font-semibold px-8 py-3 rounded-full text-sm sm:text-base hover:bg-accent hover:text-white transition-all duration-300 shadow-lg hover:scale-105 transform text-center">
+                    Discover Our Clinic
+                </a>
+                <a href="#contact" class="bg-accent text-white font-semibold px-8 py-3 rounded-full text-sm sm:text-base hover:bg-primary transition-all duration-300 shadow-lg hover:scale-105 transform text-center">
+                    Book Appointment
+                </a>
             </div>
+
+           
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold text-dark-text mb-6">About Hridyarambh Clinic</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <!-- Image -->
-                <div class="fade-in">
+                <div data-aos="fade-up" data-aos-delay="100">
                     <div class="relative">
                         <img src="images/banner_2.jpg" 
                              alt="Hridyarambh Clinic" 
                              class="rounded-2xl shadow-2xl hover-scale w-full border-4 border-accent">
-                      
                     </div>
                 </div>
                 
                 <!-- Content -->
-                <div class="fade-in">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <div class="space-y-6">
                         <p class="text-lg text-dark-text leading-relaxed">
                             Hridyarambh Clinic & Pharmacy is a trusted polyclinic located at Makwana Road, Vasant Centria, Marol Naka, Andheri East, Mumbai. We are committed to delivering comprehensive and compassionate healthcare under one roof.
@@ -233,7 +240,7 @@
     <section class="py-20 bg-section-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Tagline -->
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-secondary font-medium mb-4">Our Promise</p>
                 <h2 class="text-4xl md:text-6xl font-bold text-primary mb-6">
                     Care. <span class="text-heading-text">Cure.</span> <span class="text-secondary">Compassion.</span>
@@ -244,7 +251,7 @@
             <!-- Mission & Vision Cards -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
                 <!-- Mission Card -->
-                <div class="fade-in">
+                <div data-aos="fade-up" data-aos-delay="100">
                     <div class="bg-main-bg rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 group cursor-pointer">
                         <div class="flex items-center mb-6">
                             <div class="bg-gradient-to-r from-accent to-primary p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
@@ -259,7 +266,7 @@
                 </div>
 
                 <!-- Vision Card -->
-                <div class="fade-in">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <div class="bg-main-bg rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 group cursor-pointer">
                         <div class="flex items-center mb-6">
                             <div class="bg-gradient-to-r from-primary to-primary-dark p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
@@ -275,7 +282,7 @@
             </div>
 
             <!-- Bottom Tagline -->
-            <div class="text-center mt-16 fade-in">
+            <div class="text-center mt-16" data-aos="fade-up">
                 <p class="text-accent font-medium text-lg">
                     <i class="fas fa-star text-accent mr-2"></i>
                     Every day we deliver care that comforts, cures that restore
@@ -289,7 +296,7 @@
     <section id="services" class="py-20 bg-main-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-secondary font-medium mb-4">What We Offer</p>
                 <h2 class="text-4xl md:text-5xl font-bold text-heading-text mb-6">Our Medical Services</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6"></div>
@@ -301,7 +308,7 @@
             <!-- Services Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Cardiology -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="100" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-heartbeat text-2xl text-white"></i>
@@ -314,7 +321,7 @@
                 </div>
 
                 <!-- Gynaecology -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="200" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-secondary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-female text-2xl text-white"></i>
@@ -327,7 +334,7 @@
                 </div>
 
                 <!-- General Medicine -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="300" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-stethoscope text-2xl text-white"></i>
@@ -340,7 +347,7 @@
                 </div>
 
                 <!-- Orthopaedics -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="100" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-bone text-2xl text-white"></i>
@@ -353,7 +360,7 @@
                 </div>
 
                 <!-- Paediatrics -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="200" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-baby text-2xl text-white"></i>
@@ -366,7 +373,7 @@
                 </div>
 
                 <!-- Diagnostic Services -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="300" class="group">
                     <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
                         <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                             <i class="fas fa-microscope text-2xl text-white"></i>
@@ -380,7 +387,7 @@
             </div>
 
             <!-- Call to Action -->
-            <div class="text-center mt-16 fade-in">
+            <div class="text-center mt-16" data-aos="fade-up">
                 <p class="text-body-text mb-6">Need medical consultation or have questions about our services?</p>
                 <a href="#contact" class="bg-gradient-to-r from-primary to-primary-dark hover:from-secondary hover:to-secondary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl">
                     Book Your Appointment
@@ -393,7 +400,7 @@
     <section id="doctors" class="py-20 bg-section-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold text-heading-text mb-6">Our Expert Doctors</h2>
                 <p class="text-xl text-body-text">Meet our experienced medical professionals</p>
             </div>
@@ -401,7 +408,7 @@
             <!-- Main Doctors -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
                 <!-- Dr. Kiran Narang -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="100" class="group">
                     <div class="bg-main-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-primary hover:border-accent hover:scale-105 hover:bg-light-bg h-full cursor-pointer">
                         <div class="flex flex-col md:flex-row items-center h-full">
                             <div class="md:w-1/3 mb-6 md:mb-0">
@@ -440,7 +447,7 @@
                 </div>
 
                 <!-- Dr. Pallavi Chauhan -->
-                <div class="fade-in group">
+                <div data-aos="fade-up" data-aos-delay="200" class="group">
                     <div class="bg-main-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-primary hover:border-accent hover:scale-105 hover:bg-light-bg h-full cursor-pointer">
                         <div class="flex flex-col md:flex-row items-center h-full">
                             <div class="md:w-1/3 mb-6 md:mb-0">
@@ -481,11 +488,11 @@
             </div>
 
             <!-- View All Consultants Button -->
-            <div class="text-center mt-16 fade-in">
+            <div class="text-center mt-16" data-aos="fade-up">
                 <div class="mb-8">
                     <h3 class="text-2xl font-bold text-heading-text mb-4">Our Visiting Consultants</h3>
-                    <p class="text-body-text mb-6">We also have 11 specialized visiting consultants across multiple medical disciplines</p>
-                    <a href="consultants.html" class="bg-gradient-to-r from-secondary to-secondary-dark hover:from-accent hover:to-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl hover:scale-105">
+                    <p class="text-body-text mb-6">We also have  specialized visiting consultants across multiple medical disciplines</p>
+                    <a href="./consultants.html" class="bg-gradient-to-r from-secondary to-secondary-dark hover:from-accent hover:to-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl hover:scale-105">
                         <i class="fas fa-users mr-2"></i>
                         View All Consultants
                     </a>
@@ -505,7 +512,7 @@
     <section class="py-20 bg-main-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold text-heading-text mb-6">Our Clinic</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6"></div>
                 <p class="text-xl text-body-text max-w-3xl mx-auto">
@@ -518,7 +525,7 @@
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Reception Area -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="100" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/receptionArea.jpeg" alt="Reception Area" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -526,7 +533,7 @@
                 </div>
 
                 <!-- Consultation Room -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/consultationRoom.jpeg" alt="Consultation Room" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -534,7 +541,7 @@
                 </div>
 
                 <!-- Sonography Room -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="300" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/Sonography_Room.jpeg" alt="Sonography Room" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -542,7 +549,7 @@
                 </div>
 
                 <!-- Medical Equipment Area -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="100" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/Patient_Care_Room.jpeg" alt="Patient Care Room" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -550,7 +557,7 @@
                 </div>
 
                 <!-- Diagnostic Center -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="200" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/Diagnostic_Center.jpeg" alt="Diagnostic Center" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -558,7 +565,7 @@
                 </div>
 
                 <!-- Treatment Room -->
-                <div class="fade-in group text-center">
+                <div data-aos="fade-up" data-aos-delay="300" class="group text-center">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                         <img src="./images/Treatment_Room.jpeg" alt="Treatment Room" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
@@ -579,7 +586,7 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Section Header -->
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-secondary font-medium mb-4">Testimonials</p>
                 <h2 class="text-4xl md:text-5xl font-bold text-heading-text mb-6">What Our <span class="text-primary">Patients Say</span></h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-6"></div>
@@ -591,7 +598,7 @@
             <!-- Testimonials Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Testimonial Card 1 -->
-                <div class="fade-in group bg-main-bg p-8 rounded-3xl shadow-xl border border-border-color flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/30 cursor-default">
+                <div data-aos="fade-up" data-aos-delay="100" class="group bg-main-bg p-8 rounded-3xl shadow-xl border border-border-color flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/30 cursor-default">
                     <div class="flex items-center gap-1 text-warning mb-4 transition-transform duration-300 group-hover:scale-105">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -614,7 +621,7 @@
                 </div>
 
                 <!-- Testimonial Card 2 -->
-                <div class="fade-in group bg-main-bg p-8 rounded-3xl shadow-xl border border-border-color flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/30 cursor-default">
+                <div data-aos="fade-up" data-aos-delay="200" class="group bg-main-bg p-8 rounded-3xl shadow-xl border border-border-color flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/30 cursor-default">
                     <div class="flex items-center gap-1 text-warning mb-4 transition-transform duration-300 group-hover:scale-105">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1314,6 +1321,19 @@
         
         // Make closeSuccessMessage globally available
         window.closeSuccessMessage = closeSuccessMessage;
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out',
+            once: true,
+            offset: 80,
+            disable: function() {
+                // Disable on small screens to prevent horizontal scroll & content hiding
+                return window.innerWidth < 768;
+            }
+        });
     </script>
 </body>
 </html>
