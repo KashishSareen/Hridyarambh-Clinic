@@ -100,13 +100,24 @@
         input[type="date"] {
             -webkit-appearance: none;
             appearance: none;
-            min-height: 44px;
+            min-height: 46px;
+            color: #263238;
+            background-color: #ffffff;
+        }
+        input[type="date"]::-webkit-datetime-edit {
+            color: #263238;
+        }
+        input[type="date"]::-webkit-datetime-edit-fields-wrapper {
             color: #263238;
         }
         input[type="date"]::-webkit-calendar-picker-indicator {
             opacity: 1;
             cursor: pointer;
             padding: 4px;
+            color: #0097A7;
+        }
+        input[type="date"]:invalid::-webkit-datetime-edit {
+            color: #9ca3af;
         }
     </style>
 </head>
@@ -1565,44 +1576,44 @@
                             class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all bg-white text-heading-text">
                             <option value="">-- Choose a Doctor --</option>
                             <optgroup label="Cardiologist">
-                                <option value="Dr. Kiran K. Narang — Cardiologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm | Sat: 12:30–2:30pm & 5:30–7:30pm | Sun: 11:30am–2pm)">Dr. Kiran K. Narang — Cardiologist | Mon–Fri & Sat & Sun</option>
+                                <option value="Dr. Kiran K. Narang — Cardiologist">Dr. Kiran K. Narang | Cardiologist | Mon–Sun (Clinic hrs)</option>
                             </optgroup>
                             <optgroup label="Gynaecologist">
-                                <option value="Dr. Pallavi Chauhan — Gynaecologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm | Sat: 12:30–2:30pm & 5:30–7:30pm | Sun: 11:30am–2pm)">Dr. Pallavi Chauhan — Gynaecologist | Mon–Fri & Sat & Sun</option>
+                                <option value="Dr. Pallavi Chauhan — Gynaecologist">Dr. Pallavi Chauhan | Gynaecologist | Mon–Sun (Clinic hrs)</option>
                             </optgroup>
                             <optgroup label="Pediatrician">
-                                <option value="Dr. Nikhil Bhandari — Pediatrician (Daily 5:30–7pm)">Dr. Nikhil Bhandari — Pediatrician | 5:30–7pm</option>
-                                <option value="Dr. Krati Jain — Pediatrician (Daily 1–2pm)">Dr. Krati Jain — Pediatrician | 1–2pm</option>
+                                <option value="Dr. Nikhil Bhandari — Pediatrician | Daily 5:30–7pm">Dr. Nikhil Bhandari | Pediatrician | Daily 5:30–7pm</option>
+                                <option value="Dr. Krati Jain — Pediatrician | Daily 1–2pm">Dr. Krati Jain | Pediatrician | Daily 1–2pm</option>
                             </optgroup>
-                            <optgroup label="Physician / Diabetologist">
-                                <option value="Dr. Milind Katta — Physician / Diabetologist (Daily 8–10pm)">Dr. Milind Katta — Physician | 8–10pm</option>
+                            <optgroup label="Physician">
+                                <option value="Dr. Milind Katta — Physician | Daily 8–10pm">Dr. Milind Katta | Physician | Daily 8–10pm</option>
                             </optgroup>
                             <optgroup label="Surgeon">
-                                <option value="Dr. Sangeeta Jadhav — Surgeon (Daily 9–12 noon)">Dr. Sangeeta Jadhav — Surgeon | 9am–12pm</option>
-                                <option value="Dr. Santosh Saahu — Surgeon (Daily 1:30–2:30pm)">Dr. Santosh Saahu — Surgeon | 1:30–2:30pm</option>
+                                <option value="Dr. Sangeeta Jadhav — Surgeon | Daily 9am–12 noon">Dr. Sangeeta Jadhav | Surgeon | Daily 9am–12 noon</option>
+                                <option value="Dr. Santosh Saahu — Surgeon | Daily 1:30–2:30pm">Dr. Santosh Saahu | Surgeon | Daily 1:30–2:30pm</option>
                             </optgroup>
                             <optgroup label="Urologist">
-                                <option value="Dr. Amol Kamble — Urologist (Daily 9:00am)">Dr. Amol Kamble — Urologist | 9:00am</option>
-                                <option value="Dr. Yuvraj Pawaskar — Urologist (Daily 3–4pm)">Dr. Yuvraj Pawaskar — Urologist | 3–4pm</option>
+                                <option value="Dr. Amol Kamble — Urologist | Daily 9:00am">Dr. Amol Kamble | Urologist | Daily 9:00am</option>
+                                <option value="Dr. Yuvraj Pawaskar — Urologist | Daily 3–4pm">Dr. Yuvraj Pawaskar | Urologist | Daily 3–4pm</option>
                             </optgroup>
                             <optgroup label="Orthopedic">
-                                <option value="Dr. Harshal Jadhav — Orthopedic (By appointment)">Dr. Harshal Jadhav — Orthopedic | By appt.</option>
+                                <option value="Dr. Harshal Jadhav — Orthopedic | By appointment">Dr. Harshal Jadhav | Orthopedic | By appointment</option>
                             </optgroup>
                             <optgroup label="Dermatologist">
-                                <option value="Meghna Rane — Dermatologist (Daily 11–12pm)">Meghna Rane — Dermatologist | 11–12pm</option>
-                                <option value="Dr. Pallavi — Dermatologist (Daily 10am / 9:30pm)">Dr. Pallavi — Dermatologist | 10am / 9:30pm</option>
+                                <option value="Meghna Rane — Dermatologist | Daily 11–12pm">Meghna Rane | Dermatologist | Daily 11–12pm</option>
+                                <option value="Dr. Pallavi — Dermatologist | Daily 10am &amp; 9:30pm">Dr. Pallavi | Dermatologist | Daily 10am &amp; 9:30pm</option>
                             </optgroup>
                             <optgroup label="Plastic Surgeon">
-                                <option value="Dr. Apurva Samant — Plastic Surgeon (Daily 2–4pm)">Dr. Apurva Samant — Plastic Surgeon | 2–4pm</option>
+                                <option value="Dr. Apurva Samant — Plastic Surgeon | Daily 2–4pm">Dr. Apurva Samant | Plastic Surgeon | Daily 2–4pm</option>
                             </optgroup>
                             <optgroup label="Neurologist">
-                                <option value="Dr. Saurabh Nair — Neurologist (Thu & Tue 3–5pm)">Dr. Saurabh Nair — Neurologist | Thu & Tue 3–5pm</option>
+                                <option value="Dr. Saurabh Nair — Neurologist | Thu &amp; Tue 3–5pm">Dr. Saurabh Nair | Neurologist | Thu &amp; Tue 3–5pm</option>
                             </optgroup>
                             <optgroup label="Psychiatrist / Counselor">
-                                <option value="Dr. Angana Sharma — Psychiatrist Counselor (Morning, min. 1hr)">Dr. Angana Sharma — Counselor | Morning</option>
+                                <option value="Dr. Angana Sharma — Psychiatrist Counselor | Morning (min. 1hr)">Dr. Angana Sharma | Counselor | Morning ( 1hr)</option>
                             </optgroup>
                             <optgroup label="Nutritionist">
-                                <option value="Nishreen Ujjainwala — Nutritionist (By appointment)">Nishreen Ujjainwala — Nutritionist | By appt.</option>
+                                <option value="Nishreen Ujjainwala — Nutritionist | By appointment">Nishreen Ujjainwala | Nutritionist | By appointment</option>
                             </optgroup>
                         </select>
                         <p id="err-doctor" class="hidden text-red-500 text-xs mt-1">
@@ -1616,8 +1627,8 @@
                             <i class="fas fa-calendar-alt text-primary mr-1"></i> Preferred Date *
                         </label>
                         <input type="date" id="appt-date"
-                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text bg-white appearance-none"
-                            style="-webkit-appearance: none; color: #263238;"/>
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all bg-white"
+                            style="color: #263238; -webkit-appearance: none; min-height: 46px;"/>
                         <p id="err-date" class="hidden text-red-500 text-xs mt-1">
                             <i class="fas fa-exclamation-circle mr-1"></i>Please select a preferred date.
                         </p>
