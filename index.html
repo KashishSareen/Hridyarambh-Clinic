@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -306,93 +307,216 @@
             </div>
 
             <!-- Services Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Cardiology -->
-                <div data-aos="fade-up" data-aos-delay="100" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-heartbeat text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Cardiology</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Complete heart care with advanced diagnostics and expert consultation.
-                        </p>
-                    </div>
-                </div>
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Gynaecology -->
-                <div data-aos="fade-up" data-aos-delay="200" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-secondary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-female text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Gynaecology</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Comprehensive women's health services and specialized care.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- General Medicine -->
-                <div data-aos="fade-up" data-aos-delay="300" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-stethoscope text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">General Medicine</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Primary healthcare and preventive medicine for all ages.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Orthopaedics -->
-                <div data-aos="fade-up" data-aos-delay="100" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-bone text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Orthopaedics</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Expert bone and joint care with specialized treatments.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Paediatrics -->
-                <div data-aos="fade-up" data-aos-delay="200" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-baby text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Paediatrics</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Specialized child healthcare and developmental monitoring.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Diagnostic Services -->
-                <div data-aos="fade-up" data-aos-delay="300" class="group">
-                    <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-microscope text-2xl text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">Diagnostic Services</h3>
-                        <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
-                            Advanced diagnostic facilities with modern equipment.
-                        </p>
-                    </div>
-                </div>
+    <!-- Cardiology (Already exists - kept same) -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-heartbeat text-2xl text-white"></i>
             </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Cardiology</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Complete heart care with advanced diagnostics and expert consultation.
+            </p>
+        </div>
+    </div>
+
+    <!-- Gynaecology -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-secondary-dark rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-female text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Gynaecology</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Comprehensive women's health services and specialized care.
+            </p>
+        </div>
+    </div>
+
+    <!-- General Medicine (Physician) -->
+    <div data-aos="fade-up" data-aos-delay="300" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-stethoscope text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300"> Physician</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Primary healthcare and preventive medicine for all ages.
+            </p>
+        </div>
+    </div>
+
+    <!-- Orthopaedics -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-bone text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Orthopaedics</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Expert bone and joint care with specialized treatments.
+            </p>
+        </div>
+    </div>
+
+    <!-- Paediatrics -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-baby text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Paediatrics</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Specialized child healthcare and developmental monitoring.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pathology (Replaced Diagnostic Services) -->
+    <div data-aos="fade-up" data-aos-delay="300" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-vials text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">Pathology</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">
+                Accurate lab testing and pathology services with reliable reports.
+            </p>
+        </div>
+    </div>
+
+    <!-- Dermatologist -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-hand-dots text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Dermatologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Skin, hair and cosmetic care by experienced specialists.</p>
+        </div>
+    </div>
+
+    <!-- Urologist -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-filter text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Urologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Expert care for urinary tract and male reproductive health.</p>
+        </div>
+    </div>
+
+    <!-- Neurologist -->
+    <div data-aos="fade-up" data-aos-delay="300" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-brain text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">Neurologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Specialized treatment for brain, spine and nervous system.</p>
+        </div>
+    </div>
+
+    <!-- Surgeon -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-user-nurse text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Surgeon</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Advanced surgical procedures with expert care.</p>
+        </div>
+    </div>
+
+    <!-- Gastroenterologist -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-disease text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Gastroenterologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Digestive system care and advanced GI treatments.</p>
+        </div>
+    </div>
+
+    <!-- Nutritionist -->
+    <div data-aos="fade-up" data-aos-delay="300" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-apple-alt text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">Nutritionist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Personalized diet plans for a healthy lifestyle.</p>
+        </div>
+    </div>
+
+    <!-- Psychiatrist & Counsellor -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-comments text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Psychiatrist & Counsellor</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Mental health support and therapy services.</p>
+        </div>
+    </div>
+
+    <!-- Radiologist -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-x-ray text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Radiologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Imaging services including X-ray, CT scan and MRI.</p>
+        </div>
+    </div>
+
+    <!-- Plastic Surgeon -->
+    <div data-aos="fade-up" data-aos-delay="300" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-accent hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-accent to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-star-of-life text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-accent transition-colors duration-300">Plastic Surgeon</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Cosmetic and reconstructive surgical procedures.</p>
+        </div>
+    </div>
+
+    <!-- Pharmacy -->
+    <div data-aos="fade-up" data-aos-delay="100" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-primary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-pills text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-primary transition-colors duration-300">Pharmacy</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">In-house pharmacy with genuine medicines available daily.</p>
+        </div>
+    </div>
+
+    <!-- Nephrologist -->
+    <div data-aos="fade-up" data-aos-delay="200" class="group">
+        <div class="bg-main-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-border-color hover:border-secondary hover:scale-105 cursor-pointer text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary to-primary rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-tint text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-heading-text mb-4 group-hover:text-secondary transition-colors duration-300">Nephrologist</h3>
+            <p class="text-body-text group-hover:text-heading-text transition-colors duration-300">Expert kidney care including dialysis, hypertension, and renal disorders.</p>
+        </div>
+    </div>
+
+</div>
 
             <!-- Call to Action -->
-            <div class="text-center mt-16" data-aos="fade-up">
+            <!-- <div class="text-center mt-16" data-aos="fade-up">
                 <p class="text-body-text mb-6">Need medical consultation or have questions about our services?</p>
                 <a href="#contact" class="bg-gradient-to-r from-primary to-primary-dark hover:from-secondary hover:to-secondary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl">
                     Book Your Appointment
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -412,13 +536,13 @@
                     <div class="bg-main-bg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-primary hover:border-accent hover:scale-105 hover:bg-light-bg h-full cursor-pointer">
                         <div class="flex flex-col md:flex-row items-center h-full">
                             <div class="md:w-1/3 mb-6 md:mb-0">
-                                <img src="images/dr.kiranknarang.jpeg" alt="Dr. Kiran Narang" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg border-4 border-primary group-hover:border-accent group-hover:scale-110 group-hover:shadow-2xl group-hover:brightness-110 transition-all duration-300">
+                                <img src="images/dr_kiran_narang.jpeg" alt="Dr. Kiran Narang" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg border-4 border-primary group-hover:border-accent group-hover:scale-110 group-hover:shadow-2xl group-hover:brightness-110 transition-all duration-300">
                             </div>
                             <div class="md:w-2/3 md:pl-8 text-center md:text-left flex-1">
                                 <h3 class="text-2xl font-bold text-heading-text mb-2 group-hover:text-primary transition-colors duration-300">Dr. Kiran K. Narang</h3>
                                 <p class="text-primary font-semibold mb-3 group-hover:text-accent transition-colors duration-300">MBBS MD DNB (Mum)</p>
                                 <p class="text-primary font-semibold mb-3 group-hover:text-accent transition-colors duration-300">Consultant Interventional Cardiologist</p>
-                                <p class="text-body-text mb-4 group-hover:text-heading-text transition-colors duration-300">Ex. Asst Natr and Copper Hospital</p>
+                                <p class="text-body-text mb-4 group-hover:text-heading-text transition-colors duration-300">Ex. Asst prof. Nair and Copper Hospital</p>
                                 <p class="text-body-text mb-4 group-hover:text-heading-text transition-colors duration-300">Angiography, Angioplasty, Pacemaker</p>
                                 <p class="text-body-text mb-4 group-hover:text-heading-text transition-colors duration-300">2D-Echocardiography Specialist</p>
                                 
@@ -500,9 +624,9 @@
                 
                 <div class="border-t border-border-color pt-8">
                     <p class="text-body-text mb-6">To schedule an appointment with any of our specialists</p>
-                    <a href="#contact" class="bg-gradient-to-r from-primary to-primary-dark hover:from-secondary hover:to-secondary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl">
-                        Book Consultation
-                    </a>
+                    <button onclick="document.getElementById('appointmentModal').classList.remove('hidden')" class="bg-gradient-to-r from-primary to-primary-dark hover:from-secondary hover:to-secondary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 shadow-xl hover:shadow-2xl">
+                        Book Your Appointment
+                    </button>
                 </div>
             </div>
         </div>
@@ -868,7 +992,11 @@
                         <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
                     </button>
                     <div class="faq-answer hidden mt-2 ml-11 p-4 bg-section-bg rounded-lg border-l-4 border-primary">
-                        <p class="text-body-text text-sm sm:text-base leading-relaxed">Hridyarambh Clinic is located at <strong>Shop No. 2, P2, Vasant Centria, Makwana Road, Marol, Andheri East -400059</strong>. We are easily accessible with convenient location for patients.</p>
+                        <p class="text-body-text text-sm sm:text-base leading-relaxed">Hridyarambh Clinic is located at <strong>Shop No. 2, P2, Vasant Centria, Makwana Road, Marol, Andheri East – 400059</strong>.<br><br>
+                        <strong>Clinic Hours:</strong><br>
+                        Mon–Fri: 12:30–2:30pm &amp; 6:30–10pm<br>
+                        Saturday: 12:30–2:30pm &amp; 5:30–7:30pm<br>
+                        Sunday: 11:30am–2:00pm</p>
                     </div>
                 </div>
             </div>
@@ -914,18 +1042,43 @@
                 <!-- LEFT SIDE - Contact Information Cards -->
                 <div class="space-y-6">
                     <!-- Address Card -->
-                    <div class="group bg-gradient-to-r from-primary/10 to-primary/20 border border-primary/30 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-primary hover:from-primary/20 hover:to-primary/30 fade-in">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 flex items-center justify-center rounded-lg bg-primary transition duration-300 group-hover:bg-primary-dark group-hover:scale-110">
+                    <div data-aos="fade-up" data-aos-delay="100" class="group bg-gradient-to-r from-primary/10 to-primary/20 border border-primary/30 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-primary hover:from-primary/20 hover:to-primary/30">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-primary transition duration-300 group-hover:bg-primary-dark group-hover:scale-110">
                                 <i class="fas fa-map-marker-alt text-2xl text-white transition"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-heading-text text-lg mb-2">Address</h3>
+                                <h3 class="font-semibold text-heading-text text-lg mb-1">Address</h3>
                                 <p class="text-body-text text-sm leading-relaxed">
                                     Shop No. 2, P2, Vasant Centria,<br />
-                                    Makwana Road, Marol, Andheri East -400059<br />
-
+                                    Makwana Road, Marol, Andheri East – 400059
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clinic Hours Card -->
+                    <div data-aos="fade-up" data-aos-delay="200" class="group bg-gradient-to-r from-accent/10 to-primary/10 border border-accent/30 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-accent">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-gradient-to-r from-accent to-primary transition duration-300 group-hover:scale-110">
+                                <i class="fas fa-clock text-2xl text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-heading-text text-lg mb-3">Clinic Hours</h3>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between items-center py-1 border-b border-border-color">
+                                        <span class="font-medium text-heading-text">Mon – Fri</span>
+                                        <span class="text-primary font-semibold">12:30–2:30pm &amp; 6:30–10pm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-1 border-b border-border-color">
+                                        <span class="font-medium text-heading-text">Saturday</span>
+                                        <span class="text-primary font-semibold">12:30–2:30pm &amp; 5:30–7:30pm</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-1">
+                                        <span class="font-medium text-heading-text">Sunday</span>
+                                        <span class="text-primary font-semibold">11:30am – 2:00pm</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1322,6 +1475,170 @@
         // Make closeSuccessMessage globally available
         window.closeSuccessMessage = closeSuccessMessage;
     </script>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="hidden fixed inset-0 z-[999] overflow-y-auto">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/60" onclick="closeAppointmentModal()"></div>
+
+        <!-- Modal Box -->
+        <div class="relative min-h-screen flex items-start justify-center px-3 sm:px-4 py-4 sm:py-10">
+            <div class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl w-full max-w-lg z-10 mb-4">
+
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-primary to-primary-dark px-4 sm:px-6 py-4 sm:py-5 rounded-t-2xl sm:rounded-t-3xl flex items-center justify-between">
+                    <div>
+                        <h2 class="text-base sm:text-xl font-bold text-white flex items-center gap-2">
+                            <i class="fas fa-calendar-check"></i> Book an Appointment
+                        </h2>
+                    
+                    </div>
+                    <button onclick="closeAppointmentModal()" class="text-white/70 hover:text-white text-3xl leading-none font-light ml-4">&times;</button>
+                </div>
+
+                <!-- Form -->
+                <form id="appointmentForm" class="px-4 sm:px-6 py-4 sm:py-6 space-y-4" novalidate>
+
+                    <!-- Clinic Hours Note -->
+                    <div class="bg-section-bg rounded-xl px-3 sm:px-4 py-3 border border-border-color text-xs text-body-text">
+                        <p class="font-semibold text-heading-text mb-1.5"><i class="fas fa-clock text-primary mr-1"></i> Clinic Hours</p>
+                        <div class="space-y-0.5">
+                            <p><span class="font-medium text-heading-text">Mon–Fri:</span> 12:30–2:30pm &amp; 6:30–10pm</p>
+                            <p><span class="font-medium text-heading-text">Saturday:</span> 12:30–2:30pm &amp; 5:30–7:30pm</p>
+                            <p><span class="font-medium text-heading-text">Sunday:</span> 11:30am–2:00pm</p>
+                        </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-user text-primary mr-1"></i> Full Name *
+                        </label>
+                        <input type="text" id="appt-name" placeholder="e.g. Priya Sharma"
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text placeholder-gray-400"/>
+                        <p id="err-name" class="hidden text-red-500 text-xs mt-1">
+                            <i class="fas fa-exclamation-circle mr-1"></i>Please enter your full name.
+                        </p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-phone-alt text-primary mr-1"></i> Contact Number *
+                        </label>
+                        <input type="tel" id="appt-phone" placeholder="e.g. 9876543210"
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text placeholder-gray-400"/>
+                        <p id="err-phone" class="hidden text-red-500 text-xs mt-1">
+                            <i class="fas fa-exclamation-circle mr-1"></i>Please enter your contact number.
+                        </p>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-envelope text-primary mr-1"></i> Email Address
+                            <span class="text-gray-400 font-normal text-xs">(optional)</span>
+                        </label>
+                        <input type="email" id="appt-email" placeholder="e.g. priya@email.com"
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text placeholder-gray-400"/>
+                    </div>
+
+                    <!-- Select Doctor -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-user-md text-primary mr-1"></i> Select Doctor *
+                        </label>
+                        <select id="appt-doctor"
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all bg-white text-heading-text">
+                            <option value="">-- Choose a Doctor --</option>
+                            <optgroup label="Cardiologist">
+                                <option value="Dr. Kiran K. Narang — Cardiologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm | Sat: 12:30–2:30pm & 5:30–7:30pm | Sun: 11:30am–2pm)">Dr. Kiran K. Narang — Cardiologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm)</option>
+                            </optgroup>
+                            <optgroup label="Gynaecologist">
+                                <option value="Dr. Pallavi Chauhan — Gynaecologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm | Sat: 12:30–2:30pm & 5:30–7:30pm | Sun: 11:30am–2pm)">Dr. Pallavi Chauhan — Gynaecologist (Mon–Fri: 12:30–2:30pm & 6:30–10pm)</option>
+                            </optgroup>
+                            <optgroup label="Pediatrician">
+                                <option value="Dr. Nikhil Bhandari — Pediatrician (Daily 5:30–7pm)">Dr. Nikhil Bhandari — Pediatrician (Daily 5:30–7pm)</option>
+                                <option value="Dr. Krati Jain — Pediatrician (Daily 1–2pm)">Dr. Krati Jain — Pediatrician (Daily 1–2pm)</option>
+                            </optgroup>
+                            <optgroup label="Physician / Diabetologist">
+                                <option value="Dr. Milind Katta — Physician / Diabetologist (Daily 8–10pm)">Dr. Milind Katta — Physician / Diabetologist (Daily 8–10pm)</option>
+                            </optgroup>
+                            <optgroup label="Surgeon">
+                                <option value="Dr. Sangeeta Jadhav — Surgeon (Daily 9–12 noon)">Dr. Sangeeta Jadhav — Surgeon (Daily 9–12 noon)</option>
+                                <option value="Dr. Santosh Saahu — Surgeon (Daily 1:30–2:30pm)">Dr. Santosh Saahu — Surgeon (Daily 1:30–2:30pm)</option>
+                            </optgroup>
+                            <optgroup label="Urologist">
+                                <option value="Dr. Amol Kamble — Urologist (Daily 9:00am)">Dr. Amol Kamble — Urologist (Daily 9:00am)</option>
+                                <option value="Dr. Yuvraj Pawaskar — Urologist (Daily 3–4pm)">Dr. Yuvraj Pawaskar — Urologist (Daily 3–4pm)</option>
+                            </optgroup>
+                            <optgroup label="Orthopedic">
+                                <option value="Dr. Harshal Jadhav — Orthopedic (By appointment)">Dr. Harshal Jadhav — Orthopedic (By appointment)</option>
+                            </optgroup>
+                            <optgroup label="Dermatologist">
+                                <option value="Meghna Rane — Dermatologist (Daily 11–12pm)">Meghna Rane — Dermatologist (Daily 11–12pm)</option>
+                                <option value="Dr. Pallavi — Dermatologist (Daily 10am / 9:30pm)">Dr. Pallavi — Dermatologist (Daily 10am / 9:30pm)</option>
+                            </optgroup>
+                            <optgroup label="Plastic Surgeon">
+                                <option value="Dr. Apurva Samant — Plastic Surgeon (Daily 2–4pm)">Dr. Apurva Samant — Plastic Surgeon (Daily 2–4pm)</option>
+                            </optgroup>
+                            <optgroup label="Neurologist">
+                                <option value="Dr. Saurabh Nair — Neurologist (Thu & Tue 3–5pm)">Dr. Saurabh Nair — Neurologist (Thu & Tue 3–5pm)</option>
+                            </optgroup>
+                            <optgroup label="Psychiatrist / Counselor">
+                                <option value="Dr. Angana Sharma — Psychiatrist Counselor (Morning, min. 1hr)">Dr. Angana Sharma — Psychiatrist Counselor (Morning, min. 1hr)</option>
+                            </optgroup>
+                            <optgroup label="Nutritionist">
+                                <option value="Nishreen Ujjainwala — Nutritionist (By appointment)">Nishreen Ujjainwala — Nutritionist (By appointment)</option>
+                            </optgroup>
+                        </select>
+                        <p id="err-doctor" class="hidden text-red-500 text-xs mt-1">
+                            <i class="fas fa-exclamation-circle mr-1"></i>Please select a doctor.
+                        </p>
+                    </div>
+
+                    <!-- Preferred Date -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-calendar-alt text-primary mr-1"></i> Preferred Date *
+                        </label>
+                        <input type="date" id="appt-date"
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text"/>
+                        <p id="err-date" class="hidden text-red-500 text-xs mt-1">
+                            <i class="fas fa-exclamation-circle mr-1"></i>Please select a preferred date.
+                        </p>
+                    </div>
+
+                    <!-- Reason -->
+                    <div>
+                        <label class="block text-sm font-semibold text-heading-text mb-1">
+                            <i class="fas fa-notes-medical text-primary mr-1"></i> Reason / Symptoms
+                            <span class="text-gray-400 font-normal text-xs">(optional)</span>
+                        </label>
+                        <textarea id="appt-message" rows="3" placeholder="Briefly describe your concern or symptoms..."
+                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all text-heading-text placeholder-gray-400 resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="appt-submit"
+                        class="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-secondary hover:to-secondary-dark text-white font-bold py-3 sm:py-4 rounded-xl text-sm sm:text-base transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-calendar-check"></i> Confirm Appointment
+                    </button>
+
+                    <!-- Success Message -->
+                    <div id="appt-success" class="hidden bg-green-50 border-2 border-green-300 rounded-2xl p-4 sm:p-6 text-center">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-check-circle text-green-500 text-3xl sm:text-4xl"></i>
+                        </div>
+                        <p class="text-green-700 font-bold text-base sm:text-lg mb-1">Appointment Requested!</p>
+                        <p class="text-green-600 text-xs sm:text-sm">Thank you! We'll call you shortly to confirm your slot.</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -1330,9 +1647,79 @@
             once: true,
             offset: 80,
             disable: function() {
-                // Disable on small screens to prevent horizontal scroll & content hiding
                 return window.innerWidth < 768;
             }
+        });
+    </script>
+
+    <!-- Appointment Form Logic -->
+    <script>
+        // Set min date to today
+        document.getElementById('appt-date').min = new Date().toISOString().split('T')[0];
+
+        function closeAppointmentModal() {
+            document.getElementById('appointmentModal').classList.add('hidden');
+            document.getElementById('appointmentForm').reset();
+            document.getElementById('appt-success').classList.add('hidden');
+            ['name','phone','doctor','date'].forEach(f => clearError(f));
+        }
+
+        function setError(field, show) {
+            const err   = document.getElementById('err-' + field);
+            const input = document.getElementById('appt-' + field);
+            if (!err || !input) return;
+            if (show) {
+                err.classList.remove('hidden');
+                input.classList.remove('border-gray-200');
+                input.classList.add('border-red-400');
+            } else {
+                err.classList.add('hidden');
+                input.classList.add('border-gray-200');
+                input.classList.remove('border-red-400');
+            }
+        }
+
+        function clearError(field) { setError(field, false); }
+
+        // Live clear errors on input
+        ['name','phone','doctor','date'].forEach(f => {
+            const el = document.getElementById('appt-' + f);
+            if (el) {
+                el.addEventListener('input',  () => clearError(f));
+                el.addEventListener('change', () => clearError(f));
+            }
+        });
+
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name   = document.getElementById('appt-name').value.trim();
+            const phone  = document.getElementById('appt-phone').value.trim();
+            const doctor = document.getElementById('appt-doctor').value;
+            const date   = document.getElementById('appt-date').value;
+
+            let valid = true;
+            if (!name)   { setError('name',   true); valid = false; }
+            if (!phone)  { setError('phone',  true); valid = false; }
+            if (!doctor) { setError('doctor', true); valid = false; }
+            if (!date)   { setError('date',   true); valid = false; }
+
+            if (!valid) return;
+
+            const btn = document.getElementById('appt-submit');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+            btn.disabled  = true;
+
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-calendar-check mr-2"></i> Confirm Appointment';
+                btn.disabled  = false;
+                this.reset();
+                ['name','phone','doctor','date'].forEach(f => clearError(f));
+                document.getElementById('appt-success').classList.remove('hidden');
+
+                // Auto close after 4 seconds
+                setTimeout(() => closeAppointmentModal(), 4000);
+            }, 1500);
         });
     </script>
 </body>
