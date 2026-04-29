@@ -100,9 +100,10 @@
         input[type="date"] {
             -webkit-appearance: none;
             appearance: none;
-            min-height: 46px;
+            min-height: 48px;
             color: #263238;
             background-color: #ffffff;
+            font-size: 16px; /* prevents iOS zoom */
         }
         input[type="date"]::-webkit-datetime-edit {
             color: #263238;
@@ -116,8 +117,9 @@
             padding: 4px;
             color: #0097A7;
         }
-        input[type="date"]:invalid::-webkit-datetime-edit {
-            color: #9ca3af;
+        /* Hide native placeholder text so our custom one shows */
+        input[type="date"]:not([value])::-webkit-datetime-edit {
+            color: transparent;
         }
     </style>
 </head>
@@ -1626,9 +1628,14 @@
                         <label class="block text-sm font-semibold text-heading-text mb-1">
                             <i class="fas fa-calendar-alt text-primary mr-1"></i> Preferred Date *
                         </label>
-                        <input type="date" id="appt-date"
-                            class="w-full border-2 border-gray-200 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-sm focus:outline-none focus:border-primary transition-all bg-white"
-                            style="color: #263238; -webkit-appearance: none; min-height: 46px;"/>
+                        <div class="relative">
+                            <input type="date" id="appt-date"
+                                class="w-full border-2 border-gray-200 rounded-xl px-3 py-3 text-sm focus:outline-none focus:border-primary transition-all bg-white"
+                                style="color: #263238; min-height: 48px; font-size: 16px;"/>
+                            <span id="appt-date-placeholder" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm pointer-events-none select-none">
+                                dd / mm / yyyy
+                            </span>
+                        </div>
                         <p id="err-date" class="hidden text-red-500 text-xs mt-1">
                             <i class="fas fa-exclamation-circle mr-1"></i>Please select a preferred date.
                         </p>
@@ -1681,6 +1688,20 @@
     <script>
         // Set min date to today
         document.getElementById('appt-date').min = new Date().toISOString().split('T')[0];
+
+        // Show/hide custom date placeholder
+        const dateInput = document.getElementById('appt-date');
+        const datePlaceholder = document.getElementById('appt-date-placeholder');
+        function updateDatePlaceholder() {
+            if (dateInput.value) {
+                datePlaceholder.style.display = 'none';
+            } else {
+                datePlaceholder.style.display = 'block';
+            }
+        }
+        dateInput.addEventListener('change', updateDatePlaceholder);
+        dateInput.addEventListener('input', updateDatePlaceholder);
+        updateDatePlaceholder();
 
         function closeAppointmentModal() {
             document.getElementById('appointmentModal').classList.add('hidden');
